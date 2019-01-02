@@ -18,6 +18,17 @@ pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None,
          validate=None)
 ``` 
 
+## Listing the column names
+
+```python
+list(my_dataframe.columns.values)
+```
+or
+```python
+list(my_dataframe)
+```
+
+
 ## Changing some column names 
 
 ```python 
