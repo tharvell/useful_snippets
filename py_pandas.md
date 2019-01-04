@@ -50,4 +50,20 @@ Or another way to view the problem
 mask = (df['CondCol1'] == something1) & (df['CondCol2'] > value1)
 df.loc[mask, 'ColToChange'] = 'NewValue' 
 
-``` 
+```
+
+## Get a count of each value in a column
+```python
+df['col_name'].value_counts()
+```
+if you want to include nan
+```python
+df['col_name'].value_counts(dropna=False)
+```
+
+## Get a list of unique values in a colum 
+```python
+df['col_name'].unique()
+```
+
+ 
