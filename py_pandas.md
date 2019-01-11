@@ -66,4 +66,9 @@ df['col_name'].value_counts(dropna=False)
 df['col_name'].unique()
 ```
 
- 
+## Output: CSV
+```python
+
+df.to_csv('filename.csv')
+
+```  
