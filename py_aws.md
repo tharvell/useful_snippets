@@ -23,3 +23,5 @@ stream_string = BytesIO(data_bytes)
 
 df=pd.read_csv(stream_string, encoding='latin-1', low_memory=False)
 ```
+TODO: 
+But what about other encodings ? 
