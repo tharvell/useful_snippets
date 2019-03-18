@@ -7,5 +7,7 @@ docker run -it <image> /bin/bash
 ```bash
 docker rm $(docker ps -a -q)
 ```
-
-
+# Remove all images 
+```bash
+docker rmi $(docker images -q)
+```
