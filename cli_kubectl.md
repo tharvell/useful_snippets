@@ -32,6 +32,12 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
+# Node details 
+
+```bash
+kubectl describe nodes node-name
+```
+
 # List deployments 
 
 ```bash 
@@ -41,4 +47,9 @@ kubectl get deployments
 # Delete a resources 
 ```bash 
 kubectl delete thing_name
+```
+
+# Expose the cluster 
+```bash
+kubectl proxy
 ```
