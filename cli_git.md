@@ -9,3 +9,9 @@ git config --global user.name "Your Name"
 git config user.name "Your Name"
 git config user.email "you@example.com"
 ``` 
+
+# Pull master into a branch 
+```bash
+git fetch origin
+git merge origin/master
+```
