@@ -2,10 +2,18 @@
 
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
+
+
+
 # Kubectl Version
 
 ```bash
 kubectl version
+```
+
+# List unique containers in deployment 
+```bash 
+ kubectl get pods --all-namespaces -o jsonpath="{..image}" |tr -s '[[:space:]]' '\n' |sort |uniq -c
 ```
 
 # Get the status of kubernetes components
